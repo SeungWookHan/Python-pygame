@@ -1,3 +1,4 @@
+import os
 import random
 import pygame
 ####################################################################
@@ -18,11 +19,11 @@ clock = pygame.time.Clock()
 # 사용자 게임 초기화(배경화면, 게임 이미지, 좌표, 폰트 등 설정)
 # 배경 만들기
 background = pygame.image.load(
-    '/Users/Han/programming/python-pygame/background_re.jpg')
+    '/Users/Han/programming/python-pygame/pygame_basic/background_re.jpg')
 
 # 캐릭터 만들기
 character = pygame.image.load(
-    '/Users/Han/programming/python-pygame/character_re.png')
+    '/Users/Han/programming/python-pygame/pygame_basic/character_re.png')
 character_size = character.get_rect().size
 character_width = character_size[0]
 character_height = character_size[1]
@@ -34,7 +35,8 @@ to_x = 0
 character_speed = 10
 
 # 적 만들기
-enemy = pygame.image.load('/Users/Han/programming/python-pygame/poop_re.png')
+enemy = pygame.image.load(
+    '/Users/Han/programming/python-pygame/pygame_basic/poop_re.png')
 enemy_size = enemy.get_rect().size
 enemy_width = enemy_size[0]
 enemy_height = enemy_size[1]
